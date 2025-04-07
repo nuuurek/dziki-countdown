@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Countdown Timer</h1>
+            
+            <div class="form-group">
+                <label for="start-time" class="label">Wybierz godzinę startu:</label>
+                <input type="datetime-local" id="start-time" class="input-field">
+            </div>
+            
+            <div class="form-group">
+                <label for="duration" class="label">Czas trwania (w minutach):</label>
+                <input type="number" id="duration" class="input-field" placeholder="np. 10 (minut)">
+            </div>
+            
+            <div class="form-group">
+                <label for="end-time" class="label">Godzina zakończenia:</label>
+                <input type="text" id="end-time" class="input-field" readonly>
+            </div>
+
+            <button id="start-button" class="btn">Rozpocznij Countdown</button>
+            
+            <div id="remaining-time" class="timer-display">Pozostały czas: 00:00:00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
